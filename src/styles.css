@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e0e5ef;
+}
+
+#gradient-0 stop {
+  stop-color: #506ef9;
+}
+
+#gradient-0 stop[offset="0"] {
+  stop-opacity: 0.25;
+}
+
+#gradient-0 stop[offset="1"] {
+  stop-opacity: 0;
+}
+
+.highCharts-color-0 {
+  fill: #506ef9;
+  stroke: #506ef9;
+}
+
+.highCharts-color-0 .highCharts-area {
+  fill-opacity: 1;
+  fill: url(#gradient-0);
+}
